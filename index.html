@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #011f3f;">
+    <div class="container-fluid d-flex justify-content-between">
+      <div>
+        <p></p>
+      </div>
+      <div>
+        <a class="navbar-brand" href="#">Simon Game</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div>
+        <button class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Instructions</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Instructions</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>In the context of the game, it is essential to follow a predetermined pattern based on the computer's instructions.</li>
+            <li>Each level corresponds to a specific color selection made by the computer, which should be replicated in the correct order.</li>
+            <li>For instance, if the computer chooses red at level 1 and yellow at level 2, the sequence to be reproduced would be red followed by yellow.</li>
+            <li>This pattern continues for subsequent levels, requiring accurate recollection and reproduction of the color sequence. </li>
+            <li> Adhering to this systematic approach is integral to successfully completing each level of the game.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h2 id="level-title">Press A Key to Start</h2>
+
+  <div class="container-class">
+    <div class="">
+
+      <div type="button" id="green" class="col-btn green">
+
+      </div>
+
+      <div type="button" id="red" class="col-btn red">
+
+      </div>
+    </div>
+
+    <div class="">
+
+      <div type="button" id="yellow" class="col-btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="col-btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
